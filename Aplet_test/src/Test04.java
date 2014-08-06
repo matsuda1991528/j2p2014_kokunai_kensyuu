@@ -13,6 +13,7 @@ public class Test04 extends Applet {
 
 	int x=0,y=0;
 	Image img1;
+	int size = 36;
 	public void init(){
 		img1 = getImage(getDocumentBase(), "img/0.png");
 		repaint();
@@ -21,8 +22,8 @@ public class Test04 extends Applet {
 		g.drawImage(img1, x, y, this);
 	}
 	public boolean mouseDown(Event e, int x, int y) {
-		this.x = x-20;
-		this.y = y-20;
+		this.x = x-size/2;
+		this.y = y-size/2;
 		repaint();
 		return true;
 	}

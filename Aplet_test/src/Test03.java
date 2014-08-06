@@ -18,7 +18,7 @@ public class Test03 extends Applet {
 		}
 	}
 	public void paint(Graphics g) {
-		for(int i=0;i<=9;i++) {
+		for(int i=0;i<=8;i++) {
 			g.drawImage(img[i], i*w, 0, this);
 		}
 	}
